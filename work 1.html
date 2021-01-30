@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/ico" sizes="32x32" href="./images/favicon.ico">
+
+    <title>Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @font-face {
+            font-family: "Kumbh Sans";
+            src: url("https://fonts.google.com/specimen/Kumbh+Sans") format("ttf"),
+        }
+        
+        body {
+            background-color: hsl(185, 75%, 39%);
+        }
+        
+        .backgroundTopLeft {
+            position: fixed;
+            top: -20%;
+            left: 2%;
+            max-width: 75%;
+        }
+        
+        .backgroundBottomRight {
+            position: fixed;
+            bottom: -20%;
+            right: 2%;
+            max-width: 75%;
+        }
+        
+        .contenu {
+            width: 40rem;
+            height: 25rem;
+            margin: 0 auto;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .sec {
+            display: flex;
+            background-color: white;
+            width: 100%;
+            border-radius: 1rem;
+            flex-direction: column;
+        }
+        
+        .sect {
+            position: relative
+        }
+        
+        .backgroundsect {
+            width: 100%;
+            padding-bottom: 8rem;
+            background-image: url("images/bg-pattern-card.svg");
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        
+        .image {
+            position: absolute;
+            top: 5rem;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border-radius: 50%;
+            border: 6px solid white;
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .profile1 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 4.5rem;
+            margin-bottom: -1.5rem;
+            justify-content: center;
+        }
+        
+        .name {
+            font-family: "Kumbh Sans", serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .age {
+            font-family: "Kumbh Sans", serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(221, 221, 221);
+        }
+        
+        .city {
+            font-family: "Kumbh Sans", serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(221, 221, 221);
+        }
+        
+        hr {
+            width: 100%;
+            padding-top: 0.1rem;
+            background-color: rgb(235, 235, 235);
+            border-width: 0;
+        }
+        
+        .soc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .soc>div {
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
+            text-align: center;
+        }
+        
+        .m {
+            font-family: "Kumbh Sans", serif;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .num {
+            font-family: "Kumbh Sans", serif;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgb(221, 221, 221);
+        }
+        
+        .attribution {
+            position: fixed;
+            bottom: 0;
+            font-size: 11px;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+        
+        @media (max-width: 375px) {
+            .backgroundTopLeft {
+                top: -21%;
+                left: -57%;
+                max-width: 115%;
+            }
+            .backgroundBottomRight {
+                bottom: -12%;
+                right: -57%;
+                max-width: 115%;
+            }
+            .contenu {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img class="backgroundTopLeft" src="images/bg-pattern-top.svg" />
+    <img class="backgroundBottomRight" src="images/bg-pattern-bottom.svg" />
+    <div class="contenu">
+        <div class="sec">
+            <div class="sect">
+                <div class="backgroundsect">
+                </div>
+                <div class="profilesect">
+                    <img class="image" src="images/image-victor.jpg" />
+                </div>
+            </div>
+            <div class="profile">
+                <div class="profile1">
+                    <p class="name">
+                        Victor Crest
+                        <span class="age">26</span>
+
+
+                    </p>
+
+                </div>
+                <p class="city">
+                    London
+                </p>
+            </div>
+            <hr/>
+            <div class="soc">
+                <div class="followers">
+                    <p class="m">
+                        80K
+                    </p>
+                    <p class="num">
+                        Followers
+                    </p>
+                </div>
+                <div class="likes">
+                    <p class="m">
+                        803K
+                    </p>
+                    <p class="num">
+                        Likes
+                    </p>
+                </div>
+                <div class="photos">
+                    <p class="m">
+                        1.4K
+                    </p>
+                    <p class="num">
+                        Photos
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.github.com/aymanebenhima" target="_blank">Aymane Benhima</a>. Coded by <a href="#">Coding Guild Team</a>.
+    </div>
+</body>
+
+</html>
